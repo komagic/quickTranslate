@@ -1,11 +1,51 @@
-# 关于这个仓库
+# 快速翻译 Chrome 插件
 
-本仓库用于发布沉浸式双语网页翻译扩展的 [Release 版本](https://github.com/immersive-translate/immersive-translate/releases)以及使用 [Github Issues](https://github.com/immersive-translate/immersive-translate/issues)收集和跟进用户反馈。
+## 项目简介
 
-[沉浸式翻译](https://immersivetranslate.com/) 并非开源软件，这个仓库并 **不包含** 沉浸式翻译的源代码。旧版的[沉浸式翻译开源项目](https://github.com/immersive-translate/old-immersive-translate)已于 2023 年 1 月 17 日被归档。
+快速翻译是一个基于 React 的 Chrome 插件，旨在为用户提供便捷的网页翻译功能。该插件支持多种翻译服务，用户可以轻松选择目标语言并进行翻译。
 
-[**点此安装沉浸式翻译**](https://immersivetranslate.com/docs/installation/) 或 [查看文档](https://immersivetranslate.com/docs/)
+## 功能特性
 
-以下为视频介绍：
+- **多种翻译服务**：支持 Google Translate、DeepL 和 OpenAI 等翻译服务。
+- **用户友好的界面**：使用 Material-UI 设计的现代化界面。
+- **实时翻译**：在网页上实时翻译文本，支持选择翻译和整页翻译。
+- **设置选项**：用户可以自定义默认语言和翻译服务。
 
-https://github.com/immersive-translate/immersive-translate/assets/62473795/a0e9af51-4a18-45ef-9fc4-0a1509d56ab0
+## 安装与使用
+
+1. **克隆项目**：
+   ```bash
+   git clone https://github.com/yourusername/quick-translate.git
+   cd quick-translate
+   ```
+
+2. **安装依赖**：
+   ```bash
+   npm install
+   ```
+
+3. **启动开发模式**：
+   ```bash
+   npm run dev
+   ```
+
+4. **加载插件**：
+   - 打开 Chrome 浏览器，进入 `chrome://extensions/`。
+   - 开启开发者模式。
+   - 点击“加载已解压的扩展程序”，选择项目的 `dist` 目录。
+
+## 配置
+
+在使用插件之前，你可以在设置页面中输入你的翻译服务 API 密钥（如 Google Translate、DeepL 和 OpenAI），并选择默认的目标语言和翻译服务。
+
+## 贡献
+
+欢迎任何形式的贡献！如果你有建议或发现了问题，请提交 issue 或者直接提交 pull request。
+
+## 许可证
+
+该项目采用 MIT 许可证，详情请参阅 [LICENSE](LICENSE) 文件。
+
+## 联系方式
+
+如有任何问题，请联系 [你的邮箱](mailto:your-email@example.com)。
