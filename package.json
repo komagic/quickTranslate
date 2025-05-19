@@ -1,0 +1,31 @@
+{
+    "name": "quick-translate",
+    "version": "1.9.8",
+    "description": "A Chrome extension for quick translation",
+    "scripts": {
+        "dev:bg": "esbuild src/background/background.ts --outfile=dist/background.js --bundle --platform=browser --watch",
+        "dev:content": "esbuild src/content/content.ts --outfile=dist/content.js --bundle --platform=browser --watch",
+        "dev:popup": "esbuild src/popup/popup.ts --outfile=dist/popup.js --bundle --platform=browser --watch",
+        "dev:options": "esbuild src/options/options.ts --outfile=dist/options.js --bundle --platform=browser --watch",
+        "dev": "concurrently \"npm:dev:*\"",
+        "build": "node build.js"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.0",
+        "@mui/icons-material": "^5.17.1",
+        "@mui/material": "^5.17.1",
+        "axios": "^1.9.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "@types/node": "^20.17.48",
+        "@types/react": "^18.3.21",
+        "@types/react-dom": "^18.3.7",
+        "concurrently": "^8.2.2",
+        "esbuild": "^0.20.1",
+        "typescript": "^5.8.3"
+    }
+}
